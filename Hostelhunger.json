@@ -1,0 +1,1047 @@
+{
+	"info": {
+		"_postman_id": "26a1389f-6792-4d82-a37f-4d0d4990cb0a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40332939"
+	},
+	"item": [
+		{
+			"name": "user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "192211190",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "190",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/user_detail.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"user_detail.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "owner login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "192211039",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/owner_detail.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"owner_detail.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "192210503",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/admin_detail.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"admin_detail.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "feedback",
+							"value": "excellent",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/feedback.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"feedback.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/orderstatus.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"orderstatus.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "available_amount",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/available_amount.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"available_amount.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchRatingByFoodId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"food_id\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/fetch_ratings.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"fetch_ratings.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orderFood",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "192211190",
+							"type": "text"
+						},
+						{
+							"key": "foodname",
+							"value": "Pasta",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "pasta.jpg",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ordertype",
+							"value": "Takeaway",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/orderFood.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"orderFood.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/orderstatus.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"orderstatus.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "veg list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/vegList.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"vegList.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "veg rest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/vegRest.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"vegRest.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/addComments.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"addComments.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch Rating By Food Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/fetch_ratings.php?food_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"fetch_ratings.php"
+					],
+					"query": [
+						{
+							"key": "food_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "old_password",
+							"value": "190",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "confirm_new_password",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/change_password.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"change_password.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin menu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/REST.jpg"
+						},
+						{
+							"key": "food_name",
+							"value": "dosa",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/adminmenu.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"adminmenu.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add menu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "food_name",
+							"value": "Biriyani EGG",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/Screenshot 2024-12-10 at 6.09.56 PM.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/addmenu.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"addmenu.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/Screenshot 2024-12-19 at 10.21.24 PM.png"
+						},
+						{
+							"key": "name",
+							"value": "192211154",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/HostelHunger/userslist.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"userslist.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "todays menu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "dosa",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/REST.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/todaysmenu.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"todaysmenu.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "todays menu list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/Screen Recording 2024-12-03 at 4.19.13 PM.mov"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/todaymenulist.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"todaymenulist.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update menu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/Screen Recording 2024-12-03 at 4.19.13 PM.mov"
+						},
+						{
+							"key": "name",
+							"value": "pasta",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "45",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/updatemenu.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"updatemenu.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pizza",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "200",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/edititem.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"edititem.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "popular menu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "maggi",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/REST.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/popularMenu.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"popularMenu.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit restaurant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "restaurant_name",
+							"value": "andhra mess",
+							"type": "text"
+						},
+						{
+							"key": "available_status",
+							"value": "available",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/editRestaurant.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"editRestaurant.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "chennai",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/location.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"location.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/fetchItems.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"fetchItems.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post Comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "comments",
+							"value": "Great item!",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/postComments.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"postComments.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Non veg list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "food_name",
+							"value": "biriyani",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/rkrservices/Desktop/Screenshot 2024-12-11 at 9.31.06 PM.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/nonVeglist.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"nonVeglist.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "juice list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/juicelist.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"juicelist.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "juice rest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/juiceRest.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"juiceRest.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adding popular item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "popular",
+							"value": "yes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/HostelHunger/addpopular.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"addpopular.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/items.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"items.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "non veg rest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/HostelHunger/nonVegRest.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"HostelHunger",
+						"nonVegRest.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
